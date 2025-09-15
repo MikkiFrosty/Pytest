@@ -2,9 +2,9 @@
 name = "with-poetry"
 version = "0.1.0"
 description = ""
-authors = ["Kropotova.S.M <Kropotova.S.M@yandex.ru>"]
+authors = ["Kropotova.S.M <Kropotova.S.M@yandex.ru >"]
 readme = "README.md"
-packages = [{include = "with_poetry"}]
+packages = [{include = "tests"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -12,15 +12,8 @@ selene = "2.0.0rc2"
 selenium = "4.4.3"
 pytest = "^7.3.1"
 
-
 [tool.poetry.group.dev.dependencies]
-flake8 = "^6.0.0"
-
-
-[[tool.poetry.source]]
-name = "pypi-huawei"
-url = "https://repo.huaweicloud.com/repository/pypi/simple"
-priority = "primary"
+pylint = "^3.3.8"
 
 [build-system]
 requires = ["poetry-core"]
